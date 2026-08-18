@@ -565,45 +565,6 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"title\": \"string\",\r\n    \"price\": 0.1,\r\n    \"description\": \"string\",\r\n    \"category\": \"string\",\r\n    \"image\": \"http://example.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "https://fakestoreapi.com/products/3",
-              "protocol": "https",
-              "host": [
-                "fakestoreapi",
-                "com"
-              ],
-              "path": [
-                "products",
-                "3"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "TC-PROD-010 - POST данные существующего продукта с явным id",
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "invalid/format",
-                "type": "text",
-                "disabled": true
-              }
-            ],
-            "body": {
-              "mode": "raw",
               "raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Mens Cotton Jacket\",\r\n    \"price\": 55.99,\r\n    \"description\": \"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.\",\r\n    \"category\": \"men's clothing\",\r\n    \"image\": \"https://fakestoreapi.com/img/71liujtlUL._AC_UX679_t.png\"\r\n}",
               "options": {
                 "raw": {
