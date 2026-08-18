@@ -547,19 +547,14 @@
             }
           },
           "response": []
-        }
-      ]
-    },
-    {
-      "name": "PUT",
-      "item": [
+        },
         {
           "name": "TC-PROD-010 - POST данные существующего продукта с явным id",
           "request": {
             "auth": {
               "type": "noauth"
             },
-            "method": "PUT",
+            "method": "POST",
             "header": [
               {
                 "key": "Accept",
@@ -591,7 +586,12 @@
             }
           },
           "response": []
-        },
+        }
+      ]
+    },
+    {
+      "name": "PUT",
+      "item": [
         {
           "name": "TC-PROD-018 - PUT успешное обновление id=3",
           "request": {
@@ -918,7 +918,7 @@
             "auth": {
               "type": "noauth"
             },
-            "method": "POST",
+            "method": "DELETE",
             "header": [
               {
                 "key": "Accept",
@@ -927,24 +927,16 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"title\": \"Test Product\",\r\n    \"price\": 19.99,\r\n    \"description\": \"Test description\",\r\n    \"category\": \"test\",\r\n    \"image\": \"https://example.com/image.jpg\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
-              "raw": "https://fakestoreapi.com/products",
+              "raw": "https://fakestoreapi.com/products/20,5",
               "protocol": "https",
               "host": [
                 "fakestoreapi",
                 "com"
               ],
               "path": [
-                "products"
+                "products",
+                "20,5"
               ]
             }
           },
